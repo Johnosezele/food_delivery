@@ -10,6 +10,7 @@ class PopularFoodDetails extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          //food pic
           Positioned(
               left: 0,
               right: 0,
@@ -20,7 +21,15 @@ class PopularFoodDetails extends StatelessWidget {
                     image: DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage("assets/image/food0.png"))),
-              ))
+              )),
+          //nav back & cart icon
+          Positioned(
+            left: Dimensions.width20,
+            right: Dimensions.width20,
+            child: Row(
+              children: [],
+            ),
+          )
         ],
       ),
     );
